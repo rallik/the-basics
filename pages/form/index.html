@@ -12,10 +12,104 @@
         <a href="../../index.html">Home</a>
     </button>
     <main>
-        <form action="">
-            
+        <form id="country-form" action="" method="GET">
+            <div class="form-input" id="country-name-input">
+                <label for="country-name">Country Name: </label>
+                <input name="country-name" id="country-name" list="names" required>
+                <datalist id="names">
+
+                </datalist>
+            </div>
+            <fieldset class="form-input" id="country-fields-input">
+                <legend>Fields to Display</legend>
+                <div class="fields-checkbox select-all">
+                    <label for="all">Select All: </label>
+                    <input type="checkbox" name="country-fields" id="all" value="all">
+                </div><br>
+                <div class="fields-checkbox">
+                    <label for="tld">Top Level Domain: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="tld" value="tld">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="cca2">Two-letter (ISO 3166-1 Alpha-2) Code: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="cca2" value="cca2">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="cca3">Three-letter (ISO 3166-1 Alpha-3) Code: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="cca3" value="cca3">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="ccn3">Three-digit (ISO 3166-1) Numeric Code: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="ccn3" value="ccn3">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="cioc">International Olympic Committee Code: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="cioc" value="cioc">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="independent">Independence Status: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="independent" value="independent">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="status">ISO 3166-1 Assignment Status: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="status" value="status">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="unMember">UN Member Status: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="unMember" value="unMember">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="currencies">Currencies: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="currencies" value="currencies">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="idd">International Dialing Codes: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="idd" value="idd">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="altSpellings">Alternate Spellings: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="altSpellings" value="altSpellings">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="languages">Official Languages: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="languages" value="languages">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="translations">Country Name Translations: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="translations" value="translations">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="landlocked">Landlocked Country: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="landlocked" value="landlocked">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="gini">Worldbank Gini Index: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="gini" value="gini">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="car">Car Driving Side: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="car" value="car">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="timezones">Timezones: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="timezones" value="timezones">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="startOfWeek">Start of Week: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="startOfWeek" value="startOfWeek">
+                </div>
+                <div class="fields-checkbox">
+                    <label for="postalCode">Postal Code: </label>
+                    <input type="checkbox" class="checkbox" name="country-fields" id="postalCode" value="postalCode">
+                </div>
+            </fieldset>
+            <button type="submit">View Info</button>
         </form>
+        <div class="display">
+
+        </div>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./optionsList.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>

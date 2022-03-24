@@ -1,1 +1,10 @@
-@import "../../style.scss"
+@import "../../style.scss";
+
+main {
+    display: flex;
+}
+
+form {
+    text-align: left;
+    width: 30%;
+}
